@@ -1,8 +1,10 @@
 package com.bridgelabz.collectiondemo;
 
+import java.util.LinkedHashSet;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.PriorityQueue;
+import java.util.Set;
 import java.util.Stack;
 
 import org.apache.commons.math3.util.MultidimensionalCounter.Iterator;
@@ -24,7 +26,17 @@ public class CollectionDemo {
 	}
 
 	private static void setDemo() {
-		// TODO Auto-generated method stub
+		System.out.println("Demonstarting set");
+		Set<String> set = new LinkedHashSet<String>();
+		set.add("Pam");
+		set.add("Kevin");
+		set.add("Angela");
+		set.add("Pam");
+		for(String str:set) {
+			System.out.println(str);
+		}
+		System.out.println("----------------------");
+		
 		
 	}
 
