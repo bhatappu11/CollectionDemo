@@ -1,5 +1,10 @@
 package com.bridgelabz.collectiondemo;
 
+import java.util.LinkedList;
+import java.util.List;
+
+import org.apache.commons.math3.util.MultidimensionalCounter.Iterator;
+
 public class CollectionDemo {
 
 	public static void main(String[] args) {
@@ -32,7 +37,16 @@ public class CollectionDemo {
 	}
 
 	private static void listDemo() {
-		// TODO Auto-generated method stub
+		System.out.println("Demonstrating list");
+		List<String> list = new LinkedList<>();
+		list.add("Ram");
+		list.add("Arjun");
+		list.add("David");
+		list.add("Juliet");
+		java.util.Iterator<String> itr = list.iterator();
+		while(itr.hasNext()) {
+			System.out.println(itr.next());
+		}
 		
 	}
 
