@@ -1,8 +1,10 @@
 package com.bridgelabz.collectiondemo;
 
+import java.util.HashMap;
 import java.util.LinkedHashSet;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Map;
 import java.util.PriorityQueue;
 import java.util.Set;
 import java.util.Stack;
@@ -21,7 +23,14 @@ public class CollectionDemo {
 	}
 
 	private static void mapDemo() {
-		// TODO Auto-generated method stub
+		Map<Integer, String> map = new HashMap<Integer, String>();
+		map.put(1, "Kim");
+		map.put(2, "Kylie");
+		map.put(3, "Kendall");
+		map.put(4, "Scott");
+		for(Map.Entry<Integer,String> m:map.entrySet()) {
+			System.out.println("Key: "+m.getKey()+" :: Value: "+m.getValue());
+		}
 		
 	}
 
