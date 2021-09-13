@@ -2,6 +2,7 @@ package com.bridgelabz.collectiondemo;
 
 import java.util.LinkedList;
 import java.util.List;
+import java.util.PriorityQueue;
 import java.util.Stack;
 
 import org.apache.commons.math3.util.MultidimensionalCounter.Iterator;
@@ -28,7 +29,27 @@ public class CollectionDemo {
 	}
 
 	private static void queueDemo() {
-		// TODO Auto-generated method stub
+		System.out.println("Demonstrating queue");
+		PriorityQueue<String> queue = new PriorityQueue<String>();
+		queue.add("lucifer");
+		queue.add("John");
+		queue.add("Ross");
+		queue.add("Sheldon");
+		System.out.println("head : "+queue.element());
+		System.out.println("head : "+queue.peek());
+		java.util.Iterator<String> itr = queue.iterator();
+		while(itr.hasNext()) {
+			System.out.println(itr.next());
+		}
+		queue.remove();
+		queue.poll();
+		java.util.Iterator<String> itr2 = queue.iterator();
+		System.out.println("queue after removing two elements");
+		while(itr2.hasNext()) {
+			System.out.println(itr2.next());
+		}
+		System.out.println("---------------------");
+		
 		
 	}
 
