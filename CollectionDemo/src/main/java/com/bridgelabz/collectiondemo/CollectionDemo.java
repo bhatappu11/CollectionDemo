@@ -2,6 +2,7 @@ package com.bridgelabz.collectiondemo;
 
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Stack;
 
 import org.apache.commons.math3.util.MultidimensionalCounter.Iterator;
 
@@ -32,7 +33,19 @@ public class CollectionDemo {
 	}
 
 	private static void stackDemo() {
-		// TODO Auto-generated method stub
+		System.out.println("Demonstrating stack");
+		Stack<String> stack = new Stack<>();
+		stack.push("Arya");
+		stack.push("Raj");
+		stack.push("Rob");
+		stack.push("Jim");
+		String pop = stack.pop();
+		System.out.println("Popped element "+pop);
+		java.util.Iterator<String> itr = stack.iterator();
+		while(itr.hasNext()) {
+			System.out.println(itr.next());
+		}
+		System.out.println("----------------------");
 		
 	}
 
@@ -47,6 +60,7 @@ public class CollectionDemo {
 		while(itr.hasNext()) {
 			System.out.println(itr.next());
 		}
+		System.out.println("---------------------");
 		
 	}
 
